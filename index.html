@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- poppins fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="assets/owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/owlcarousel/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <title>Balash Home</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <div class="container-fluid m-0 p-0 ">
+                <div class="logo-div">
+                    <div class=" d-flex flex-column" data-aos="fade-right">
+                        <a class="navbar-brand" href="#">COMPANY LOGO</a>
+                        <a class="navbar-brand-line" href="">TAGLINE HERE</a>
+                    </div>
+                </div>
+                <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto  mb-lg-0 " data-aos="fade-down">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="" class="d-flex justify-content-center align-items-start globe">
+                        <i class="bi bi-globe globe-icon"></i>
+                        <p class="mb-0 pb-0 f-16 w-400 text-dark">EN</p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="w-100 wall-img">
+                <p class="mb-0 p-0"><img class="img-fluid wall-paper" src="assets/images/wallpaper.png" id="output" />
+                </p>
+                <p class="mb-0 p-0"><input type="file" accept="image/*" name="image" id="file"
+                        onchange="loadFile(event)" style="display: none;"></p>
+                <button class="edit-photo-btn "><label for="file" style="cursor: pointer;" class="upload-img-btn ">Edit
+                        Image</label>
+                </button>
+            </div>
+        </section>
+        <section>
+            <div class="w-100">
+                <div class="gray-section">
+                </div>
+                <div class="green-section">
+                </div>
+        </section>
+
+        <section class="dp-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 d-flex justify-content-center  order-lg-first " data-aos="zoom-in">
+                        <div class="graphixs-div me-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="26px" height="24px">
+                                <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                    d="M21.161,16.174 C21.70,16.265 20.887,16.265 20.704,16.357 C20.795,16.631 20.887,16.906 20.887,17.89 C21.436,20.17 20.978,22.396 19.606,23.219 C18.233,24.43 16.129,23.311 13.933,21.389 C13.658,21.206 13.384,20.932 13.201,20.749 C13.18,20.840 12.835,21.23 12.652,21.206 C10.364,23.219 8.77,24.43 6.704,23.219 C5.423,22.396 4.966,20.200 5.515,17.363 C5.515,17.89 5.606,16.723 5.698,16.448 C5.423,16.448 5.149,16.357 4.966,16.265 C2.129,15.350 0.299,13.703 0.299,12.148 C0.299,10.684 2.38,9.128 4.783,8.213 C5.57,8.122 5.332,8.30 5.698,7.939 C5.606,7.664 5.606,7.390 5.515,7.115 C4.966,4.279 5.332,1.900 6.704,1.168 C8.77,0.344 10.364,1.168 12.560,3.181 C12.744,3.272 12.835,3.455 13.18,3.547 C13.201,3.364 13.475,3.181 13.658,2.998 C15.854,1.76 18.51,0.344 19.423,1.76 C20.795,1.900 21.253,4.370 20.612,7.390 C20.612,7.573 20.521,7.756 20.521,7.939 L21.344,8.213 C24.89,9.220 25.919,10.684 26.11,12.56 C26.11,13.612 24.89,15.167 21.161,16.174 ZM14.574,20.657 C16.403,22.213 18.142,22.853 18.965,22.396 C19.331,22.213 19.606,21.664 19.789,20.840 C19.972,19.925 19.972,18.736 19.697,17.455 C19.606,17.272 19.606,16.997 19.514,16.814 C18.325,17.89 17.227,17.272 16.37,17.363 C15.397,18.370 14.665,19.285 13.933,20.108 C14.116,20.291 14.390,20.474 14.574,20.657 ZM8.534,9.677 C8.809,9.220 9.83,8.854 9.358,8.396 C8.626,8.488 7.802,8.579 7.70,8.762 C7.345,9.494 7.528,10.226 7.894,10.958 C8.77,10.501 8.351,10.43 8.534,9.677 ZM7.70,15.808 C7.894,15.991 8.626,16.82 9.449,16.174 C9.175,15.808 8.900,15.350 8.626,14.893 C8.351,14.435 8.168,13.978 7.894,13.520 C7.528,14.344 7.253,15.76 7.70,15.808 ZM8.443,12.239 C8.809,12.971 9.175,13.612 9.632,14.344 C10.90,15.76 10.456,15.716 10.913,16.357 C11.645,16.448 12.377,16.448 13.201,16.448 C14.24,16.448 14.848,16.448 15.580,16.357 C15.946,15.716 16.403,14.984 16.769,14.344 C17.135,13.612 17.501,12.971 17.867,12.239 C17.501,11.507 17.135,10.775 16.769,10.135 C16.403,9.403 16.37,8.762 15.580,8.122 C14.756,8.30 14.24,8.30 13.201,8.30 C12.377,8.30 11.554,8.30 10.822,8.122 C10.364,8.762 9.907,9.494 9.541,10.135 C9.175,10.867 8.809,11.507 8.443,12.239 ZM17.593,9.586 C17.867,10.43 18.51,10.501 18.325,10.958 C18.691,10.226 18.965,9.494 19.240,8.671 C18.416,8.579 17.684,8.396 16.861,8.305 C17.44,8.762 17.318,9.128 17.593,9.586 ZM17.593,14.893 C17.410,15.259 17.135,15.716 16.769,16.174 C17.593,16.82 18.325,15.991 19.148,15.808 C18.965,14.984 18.691,14.252 18.325,13.520 C18.142,13.978 17.867,14.435 17.593,14.893 ZM13.109,19.285 C13.658,18.736 14.207,18.95 14.574,17.455 L11.554,17.455 C12.103,18.95 12.560,18.736 13.109,19.285 ZM7.253,22.487 C7.711,22.670 8.260,22.670 9.83,22.396 C9.907,22.30 10.913,21.481 11.920,20.566 C12.103,20.383 12.194,20.200 12.377,20.17 C11.554,19.102 10.822,18.187 10.181,17.272 C8.992,17.272 7.802,17.89 6.704,16.814 C6.704,17.180 6.613,17.455 6.521,17.821 C6.64,20.200 6.430,22.30 7.253,22.487 ZM6.64,9.37 C5.698,9.128 5.423,9.220 5.149,9.311 C2.770,10.135 1.397,11.324 1.397,12.239 C1.397,12.697 1.672,13.246 2.313,13.795 C3.44,14.344 4.51,14.893 5.332,15.350 C5.515,15.442 5.790,15.442 5.972,15.533 C6.338,14.435 6.704,13.337 7.253,12.239 C6.704,11.233 6.338,10.135 6.64,9.37 ZM12.11,4.96 C9.998,2.266 8.77,1.625 7.253,2.83 C6.430,2.540 6.64,4.462 6.613,6.932 C6.704,7.207 6.704,7.481 6.796,7.756 C7.894,7.481 8.992,7.298 10.181,7.207 C10.822,6.200 11.554,5.285 12.377,4.462 L12.11,4.96 ZM13.109,5.194 C12.652,5.743 12.103,6.383 11.554,7.24 C12.560,6.932 13.567,6.932 14.574,7.24 C14.116,6.383 13.658,5.743 13.109,5.194 ZM18.965,2.83 C18.142,1.625 16.403,2.266 14.482,3.913 L13.933,4.462 C14.756,5.377 15.488,6.292 16.129,7.207 C17.227,7.298 18.416,7.481 19.514,7.756 C19.514,7.573 19.606,7.390 19.606,7.207 C20.155,4.553 19.789,2.540 18.965,2.83 ZM20.978,9.220 C20.795,9.128 20.521,9.37 20.246,8.945 C19.881,10.43 19.423,11.141 18.965,12.148 C19.423,13.246 19.881,14.344 20.246,15.442 C20.429,15.442 20.521,15.350 20.704,15.350 C23.266,14.527 24.821,13.246 24.821,12.148 C24.821,11.233 23.358,10.43 20.978,9.220 Z" />
+                            </svg>
+
+                            <h2 class="f-24 w-500 yellow-text my-2">
+                                Graphix Point
+                            </h2>
+                            <p class="f-16 w-400 text-white">Slogan goes here</p>
+                            <div class="graphix-line mb-3"></div>
+                            <div class="d-flex justify-content-around social-icons my-2">
+                                <a href="" class="social-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="25px" height="25px">
+                                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                            d="M12.479,24.799 C5.852,24.799 0.480,19.427 0.480,12.799 C0.480,6.172 5.852,0.799 12.479,0.799 C19.107,0.799 24.479,6.172 24.479,12.799 C24.479,19.427 19.107,24.799 12.479,24.799 ZM7.112,17.773 L9.542,17.773 L9.542,9.953 L7.112,9.953 L7.112,17.773 ZM8.343,6.563 C7.560,6.563 7.48,7.91 7.48,7.777 C7.48,8.449 7.544,8.993 8.312,8.993 C9.127,8.993 9.622,8.449 9.622,7.777 C9.607,7.91 9.127,6.563 8.343,6.563 ZM18.417,13.149 C18.417,10.847 17.218,9.775 15.619,9.775 C14.308,9.775 13.524,10.528 13.205,11.38 L13.156,11.38 L13.44,9.952 L10.933,9.952 C10.966,10.654 10.997,11.470 10.997,12.447 L10.997,17.772 L13.428,17.772 L13.428,13.263 C13.428,13.39 13.444,12.814 13.509,12.655 C13.686,12.209 14.84,11.746 14.756,11.746 C15.634,11.746 15.987,12.430 15.987,13.439 L15.987,17.773 L18.417,17.773 L18.417,13.149 Z" />
+                                    </svg>
+                                </a>
+
+                                <a href="" class="social-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="25px" height="25px">
+                                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                            d="M12.221,24.319 C5.585,24.319 0.221,18.955 0.221,12.319 C0.221,5.683 5.585,0.319 12.221,0.319 C18.857,0.319 24.221,5.683 24.221,12.319 C24.221,18.955 18.857,24.319 12.221,24.319 Z" />
+                                        <path fill-rule="evenodd" fill="rgb(0, 77, 97)"
+                                            d="M17.88,14.417 C17.81,14.812 17.6,15.203 16.867,15.573 C16.745,15.889 16.558,16.177 16.318,16.416 C16.79,16.656 15.792,16.843 15.476,16.966 C15.106,17.104 14.715,17.179 14.320,17.187 C13.812,17.210 13.650,17.215 12.358,17.215 C11.65,17.215 10.903,17.210 10.395,17.187 C10.0,17.179 9.610,17.104 9.240,16.966 C8.922,16.846 8.634,16.659 8.397,16.417 C8.155,16.179 7.967,15.891 7.848,15.574 C7.709,15.204 7.634,14.813 7.626,14.418 C7.603,13.910 7.598,13.748 7.598,12.456 C7.598,11.164 7.603,11.1 7.626,10.494 C7.634,10.99 7.709,9.708 7.847,9.338 C7.967,9.20 8.154,8.733 8.397,8.495 C8.634,8.253 8.922,8.66 9.239,7.946 C9.609,7.808 10.0,7.733 10.395,7.725 C10.903,7.702 11.65,7.696 12.357,7.696 C13.649,7.696 13.812,7.702 14.319,7.724 C14.714,7.732 15.105,7.807 15.475,7.946 C15.792,8.65 16.80,8.253 16.318,8.495 C16.560,8.732 16.747,9.20 16.867,9.338 C17.5,9.708 17.80,10.98 17.88,10.493 C17.111,11.1 17.117,11.164 17.117,12.456 C17.117,13.748 17.111,13.910 17.88,14.417 ZM16.232,10.533 C16.228,10.231 16.172,9.932 16.68,9.649 C15.989,9.444 15.867,9.257 15.712,9.101 C15.556,8.946 15.370,8.825 15.164,8.745 C14.881,8.641 14.582,8.585 14.280,8.581 C13.778,8.559 13.628,8.554 12.357,8.554 C11.86,8.554 10.936,8.559 10.434,8.581 C10.132,8.585 9.833,8.641 9.550,8.745 C9.345,8.825 9.158,8.946 9.3,9.101 C8.847,9.257 8.726,9.444 8.647,9.649 C8.542,9.932 8.487,10.231 8.483,10.533 C8.460,11.35 8.455,11.185 8.455,12.456 C8.455,13.727 8.460,13.877 8.483,14.379 C8.487,14.681 8.542,14.980 8.647,15.263 C8.726,15.468 8.847,15.655 9.3,15.810 C9.158,15.966 9.345,16.87 9.550,16.166 C9.833,16.271 10.132,16.327 10.434,16.330 C10.936,16.353 11.86,16.358 12.357,16.358 C13.628,16.358 13.779,16.353 14.280,16.330 C14.582,16.327 14.881,16.271 15.164,16.166 C15.370,16.87 15.556,15.966 15.712,15.810 C15.867,15.655 15.989,15.468 16.68,15.263 C16.172,14.980 16.228,14.681 16.232,14.379 C16.254,13.877 16.259,13.727 16.259,12.456 C16.259,11.185 16.254,11.35 16.232,10.533 Z" />
+                                        <path fill-rule="evenodd" fill="rgb(0, 77, 97)"
+                                            d="M14.390,13.815 C14.122,14.216 13.740,14.530 13.293,14.715 C12.847,14.900 12.355,14.948 11.881,14.854 C11.407,14.759 10.972,14.527 10.630,14.185 C10.288,13.843 10.55,13.408 9.961,12.933 C9.867,12.459 9.915,11.968 10.100,11.521 C10.285,11.75 10.598,10.693 11.0,10.425 C11.402,10.156 11.875,10.13 12.358,10.13 C13.6,10.13 13.628,10.270 14.86,10.728 C14.545,11.187 14.802,11.809 14.802,12.457 C14.802,12.940 14.659,13.413 14.390,13.815 ZM13.677,11.575 C13.503,11.314 13.255,11.111 12.965,10.991 C12.675,10.871 12.356,10.839 12.49,10.901 C11.741,10.962 11.458,11.113 11.236,11.335 C11.14,11.557 10.863,11.839 10.802,12.147 C10.741,12.455 10.772,12.774 10.892,13.64 C11.13,13.354 11.216,13.601 11.477,13.776 C11.738,13.950 12.44,14.43 12.358,14.43 C12.779,14.43 13.182,13.876 13.480,13.578 C13.777,13.281 13.945,12.877 13.945,12.457 C13.945,12.143 13.852,11.836 13.677,11.575 Z" />
+                                        <path fill-rule="evenodd" fill="rgb(0, 77, 97)"
+                                            d="M15.469,9.916 C15.469,10.231 15.214,10.487 14.898,10.487 C14.583,10.487 14.327,10.231 14.327,9.916 C14.327,9.600 14.583,9.344 14.898,9.344 C15.214,9.344 15.469,9.600 15.469,9.916 Z" />
+                                    </svg>
+                                </a>
+
+                                <a href="" class="social-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="22px" height="22px">
+                                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                            d="M10.999,21.819 C5.201,21.819 0.499,17.118 0.499,11.319 C0.499,5.521 5.201,0.819 10.999,0.819 C16.798,0.819 21.499,5.521 21.499,11.319 C21.499,17.118 16.798,21.819 10.999,21.819 ZM16.995,6.358 C16.493,6.653 15.931,6.873 15.342,6.983 C14.867,6.477 14.192,6.163 13.442,6.163 C11.853,6.163 10.531,7.595 10.899,9.365 C9.863,9.313 8.850,9.44 7.925,8.575 C7.1,8.106 6.185,7.448 5.531,6.643 C5.304,7.28 5.178,7.471 5.178,7.956 C5.178,8.384 5.284,8.806 5.486,9.184 C5.689,9.562 5.981,9.884 6.338,10.122 C5.914,10.105 5.508,9.986 5.164,9.791 L5.164,9.824 C5.162,10.425 5.369,11.8 5.749,11.473 C6.129,11.939 6.658,12.259 7.247,12.379 C6.835,12.484 6.474,12.484 6.73,12.426 C6.401,13.457 7.362,14.207 8.506,14.230 C7.613,14.929 6.492,15.341 5.274,15.341 C5.58,15.341 4.856,15.332 4.646,15.308 C5.799,16.47 7.167,16.475 8.644,16.475 C13.432,16.475 16.53,12.512 16.53,9.72 C16.53,8.959 16.53,8.844 16.45,8.734 C16.554,8.366 16.997,7.904 17.351,7.384 C16.882,7.588 16.376,7.733 15.851,7.790 C16.392,7.468 16.800,6.960 16.995,6.358 Z" />
+                                    </svg>
+                                </a>
+
+                                <a href="" class="social-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="20px" height="21px">
+                                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                            d="M10.0,0.321 C4.478,0.321 0.1,4.798 0.1,10.320 C0.1,15.310 3.657,19.446 8.439,20.199 L8.439,13.211 L5.898,13.211 L5.898,10.320 L8.439,10.320 L8.439,8.117 C8.439,5.609 9.931,4.226 12.214,4.226 C13.308,4.226 14.454,4.421 14.454,4.421 L14.454,6.880 L13.190,6.880 C11.950,6.880 11.562,7.652 11.562,8.443 L11.562,10.318 L14.333,10.318 L13.890,13.209 L11.562,13.209 L11.562,20.197 C16.344,19.448 19.999,15.311 19.999,10.320 C19.999,4.798 15.522,0.321 10.0,0.321 Z" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <p class="f-20 w-300 text-white mb-0 mt-2">
+                                @yourusername
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 order-sm-first order-first">
+                        <div class="row">
+                            <div class="col-lg-6  d-flex justify-content-end dp-col">
+                                <div class="display-picture">
+                                    <p class="mb-0 p-0"><img src="assets/images/Ellipse 2.png" alt="" class="img-fluid"
+                                            id="dp">
+                                    </p>
+                                    <p class="mb-0 p-0"><input type="file" accept="image/*" name="image" id="dp-file"
+                                            onchange="dp(event)" style="display: none;"></p>
+                                    <div class="shadow-icon"></div>
+                                    <button class=" camera-icon"><label for="dp-file" style="cursor: pointer;"
+                                            class="upload-dp">
+                                            <svg class="" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="51px" height="51px">
+                                                <path fill-rule="evenodd" stroke="rgb(42, 103, 48)" stroke-width="2px"
+                                                    stroke-linecap="butt" stroke-linejoin="miter" opacity="0.8"
+                                                    fill="rgb(255, 255, 255)"
+                                                    d="M24.999,48.999 C11.727,48.999 0.999,38.271 0.999,24.999 C0.999,11.727 11.727,0.999 24.999,0.999 C38.271,0.999 48.999,11.727 48.999,24.999 C48.999,38.271 38.271,48.999 24.999,48.999 Z" />
+                                                <path fill-rule="evenodd" opacity="0.149" fill="rgb(255, 255, 255)"
+                                                    d="M37.374,34.843 L12.624,34.843 C12.470,34.843 12.343,34.717 12.343,34.562 L12.343,18.531 C12.343,18.376 12.470,18.249 12.624,18.249 L19.188,18.249 L19.789,16.569 L20.594,14.312 L29.401,14.312 L30.206,16.569 L30.807,18.249 L37.374,18.249 C37.529,18.249 37.656,18.376 37.656,18.531 L37.656,34.562 C37.656,34.717 37.529,34.843 37.374,34.843 ZM25.0,20.499 C21.892,20.499 19.374,23.16 19.374,26.124 C19.374,29.232 21.892,31.749 25.0,31.749 C28.107,31.749 30.625,29.232 30.625,26.124 C30.625,23.16 28.107,20.499 25.0,20.499 Z" />
+                                                <path fill-rule="evenodd" fill="rgb(42, 103, 48)"
+                                                    d="M25.0,31.749 C21.892,31.749 19.374,29.232 19.374,26.124 C19.374,23.16 21.892,20.499 25.0,20.499 C28.107,20.499 30.625,23.16 30.625,26.124 C30.625,29.232 28.107,31.749 25.0,31.749 ZM25.0,22.749 C23.136,22.749 21.624,24.261 21.624,26.124 C21.624,27.988 23.136,29.499 25.0,29.499 C26.863,29.499 28.374,27.988 28.374,26.124 C28.374,24.261 26.863,22.749 25.0,22.749 Z" />
+                                                <path fill-rule="evenodd" fill="rgb(42, 103, 48)"
+                                                    d="M37.374,37.374 L12.624,37.374 C11.71,37.374 9.812,36.116 9.812,34.562 L9.812,18.531 C9.812,16.977 11.71,15.718 12.624,15.718 L17.406,15.718 L18.548,12.526 C18.706,12.80 19.132,11.781 19.607,11.781 L30.392,11.781 C30.625,11.781 30.851,11.852 31.41,11.985 C31.231,12.119 31.375,12.307 31.454,12.526 L32.593,15.718 L37.374,15.718 C38.928,15.718 40.187,16.977 40.187,18.531 L40.187,34.562 C40.187,36.116 38.928,37.374 37.374,37.374 ZM37.656,18.531 C37.656,18.376 37.529,18.249 37.374,18.249 L30.807,18.249 L30.206,16.569 L29.401,14.312 L20.594,14.312 L19.789,16.569 L19.188,18.249 L12.624,18.249 C12.470,18.249 12.343,18.376 12.343,18.531 L12.343,34.562 C12.343,34.717 12.470,34.843 12.624,34.843 L37.374,34.843 C37.529,34.843 37.656,34.717 37.656,34.562 L37.656,18.531 Z" />
+                                            </svg></label>
+                                    </button>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="text-left" >
+                                    <div class="d-flex align-items-center name-text">
+                                        <h1 class="first-name mb-0 pb-0">David </h1>
+                                        <h1 class="last-name mb-0 pb-0">&nbsp;Johnson</h1>
+                                    </div>
+                                    <p class="mb-0 status ">Managing Director</p>
+                                    <div class="d-flex justify-content-start address-div">
+                                        <div class="d-flex flex-column address-icons py-1">
+                                            <div class="address-icon mb-4">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="16px"
+                                                    height="16px">
+                                                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                                        d="M15.132,13.337 L13.54,15.415 C12.798,15.671 12.460,15.812 12.99,15.812 C11.740,15.812 11.398,15.669 11.144,15.415 L8.908,13.173 C8.782,13.49 8.681,12.900 8.613,12.737 C8.545,12.573 8.511,12.397 8.511,12.220 C8.511,11.861 8.654,11.521 8.908,11.267 L10.660,9.517 C10.257,8.587 9.689,7.749 8.968,7.33 C8.255,6.317 7.411,5.744 6.482,5.345 L4.730,7.95 C4.474,7.351 4.136,7.491 3.775,7.491 C3.415,7.491 3.74,7.349 2.820,7.95 L0.583,4.855 C0.328,4.601 0.187,4.261 0.187,3.902 C0.187,3.542 0.330,3.203 0.583,2.949 L2.662,0.868 C3.191,0.341 3.947,0.95 4.681,0.218 C7.269,0.648 9.835,2.23 11.910,4.93 C13.980,6.165 15.357,8.732 15.783,11.318 C15.804,11.443 15.814,11.566 15.814,11.693 C15.814,12.306 15.566,12.904 15.132,13.337 ZM10.914,5.87 C9.48,3.222 6.751,1.984 4.449,1.603 C4.160,1.554 3.863,1.652 3.652,1.863 L1.611,3.904 L3.777,6.68 L6.134,3.708 L6.556,3.865 C7.835,4.334 8.997,5.77 9.961,6.40 C10.925,7.4 11.668,8.166 12.138,9.445 L12.294,9.867 L12.277,9.884 L9.933,12.224 L12.99,14.388 L14.140,12.347 C14.349,12.136 14.447,11.839 14.398,11.550 C14.17,9.247 12.779,6.952 10.914,5.87 Z" />
+                                                </svg>
+                                            </div>
+
+                                            <div class="address-icon arrow-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
+                                                    height="20px">
+                                                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                                        d="M13.214,11.154 L8.263,7.854 C7.821,7.559 7.701,7.679 7.996,8.121 L11.297,13.71 C11.493,13.366 11.493,13.845 11.297,14.139 L7.996,19.90 C7.701,19.532 7.313,19.486 7.129,18.988 L0.351,0.589 C0.228,0.257 0.399,0.86 0.731,0.208 L19.130,6.987 C19.629,7.171 19.675,7.559 19.232,7.854 L14.282,11.154 C13.987,11.351 13.508,11.351 13.214,11.154 Z" />
+                                                </svg>
+                                            </div>
+
+                                            <div class="address-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="23px"
+                                                    height="18px">
+                                                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                                        d="M22.376,9.589 L21.526,10.605 C21.453,10.687 21.357,10.737 21.238,10.755 L21.197,10.755 C21.78,10.755 20.982,10.723 20.908,10.659 L11.414,2.743 L1.921,10.659 C1.811,10.733 1.701,10.765 1.591,10.755 C1.472,10.737 1.376,10.687 1.303,10.605 L0.453,9.589 C0.379,9.498 0.347,9.390 0.357,9.267 C0.366,9.143 0.416,9.45 0.507,8.972 L10.372,0.754 C10.664,0.516 11.12,0.397 11.414,0.397 C11.817,0.397 12.164,0.516 12.457,0.754 L15.805,3.553 L15.805,0.877 C15.805,0.750 15.846,0.644 15.928,0.562 C16.11,0.479 16.116,0.438 16.244,0.438 L18.878,0.438 C19.6,0.438 19.111,0.479 19.193,0.562 C19.276,0.644 19.317,0.750 19.317,0.877 L19.317,6.475 L22.322,8.972 C22.413,9.45 22.463,9.143 22.472,9.267 C22.482,9.390 22.450,9.498 22.376,9.589 ZM3.526,10.454 L11.414,3.951 L19.303,10.454 C19.312,10.472 19.317,10.499 19.317,10.536 L19.317,17.121 C19.317,17.359 19.230,17.565 19.56,17.739 C18.883,17.912 18.677,18.0 18.439,18.0 L13.171,18.0 L13.171,12.731 L9.658,12.731 L9.658,18.0 L4.390,18.0 C4.152,18.0 3.947,17.912 3.773,17.739 C3.599,17.565 3.512,17.359 3.512,17.121 L3.512,10.536 C3.512,10.527 3.514,10.513 3.519,10.495 C3.523,10.477 3.526,10.463 3.526,10.454 Z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column  ps-2">
+                                            <div class="mb-4">
+                                                <p class="f-14 w-400 mb-0 pb-0 text-white-green">123 456 78990 321</p>
+                                                <p class="f-14 w-400 mb-0 pb-0 text-white-green">123 456 78990 321</p>
+                                            </div>
+                                            <div class="arrow-icon">
+                                                <p class="f-14 w-400 mb-0 pb-0 text-white-green">yournamemailhere</p>
+                                                <p class="f-14 w-400 mb-0 pb-0 text-white-green">yourwebsitehere</p>
+                                            </div>
+                                            <div class="mt-2">
+                                                <p class="f-14 w-400 mb-0 pb-0">Your Street Address, City</p>
+                                                <p class="f-14 w-400 mb-0 pb-0">Gose Here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="categories-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 mt-5">
+                        <div class="main-heading" data-aos="zoom-in">
+                            Shooting Categories
+                        </div>
+                        <div class="tab mt-3">
+                            <button class="tablinks" onclick="openCity(event, 'portrait')">Portrait</button>
+                            <button class="tablinks" onclick="openCity(event, 'lifestyle')">Lifestyle</button>
+                            <button class="tablinks" onclick="openCity(event, 'lingerie')">Lingerie</button>
+                            <button class="tablinks" onclick="openCity(event, 'nudu')">Nudu</button>
+                            <button class="tablinks" onclick="openCity(event, 'swimwear')">Swimwear</button>
+                            <button class="tablinks" onclick="openCity(event, 'dance')">Dance</button>
+                            <button class="tablinks" onclick="openCity(event, 'bodypainting')">Bodypainting</button>
+                            <button class="tablinks" onclick="openCity(event, 'topless')">Topless</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Tab content -->
+            <div id="portrait" class="tabcontent mt-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="details">
+                                <div class="d-flex justify-content-between">
+                                    <h1 class="heading-secondry">
+                                        Details
+                                    </h1>
+                                    <div class="d-flex align-items-center justify-content-between  metric-btn">
+                                        <p class="green-side mb-0 pb-0 px-2 d-flex align-items-center w-100">
+                                            Metric
+                                        </p>
+                                        <p class="white-side mb-0 pb-0 px-2 d-flex align-items-center">
+                                            US
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="table-div">
+                                    <table class="table details-table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Model Nr:</td>
+                                                <td colspan="2">423245678</td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Last Activity:</td>
+                                                <td>Feb 12’2022</td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Experience:</td>
+                                                <td>Experienced</td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Compensation:</td>
+                                                <td colspan="2" class="ps-2">Feb 12’2022Paid Assignments Only Apr
+                                                    20’2818
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Age:</td>
+                                                <td>25</td>
+                                                <td>Ethicity:</td>
+                                                <td>n/a</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Height:</td>
+                                                <td>5’3”</td>
+                                                <td>Skin Color:</td>
+                                                <td>Brown</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Weight:</td>
+                                                <td>125 Ibs</td>
+                                                <td>Eye Color:</td>
+                                                <td>Brown</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bust:</td>
+                                                <td>22”</td>
+                                                <td>Hair Lenght:</td>
+                                                <td>n/a</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Waist:</td>
+                                                <td>26”</td>
+                                                <td>Hair Color:</td>
+                                                <td>Brown</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hips:</td>
+                                                <td>32”</td>
+                                                <td>Tsttos:</td>
+                                                <td>None</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cup::</td>
+                                                <td>A</td>
+                                                <td>Piercings:</td>
+                                                <td>None</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dress:</td>
+                                                <td>7</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Shoe:</td>
+                                                <td>7.0</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="f-24 w-700">
+                                    50 ZEICHAE
+                                </div>
+                                <p class="mt-3 f-16 w-400">
+                                    HELLO,
+                                </p>
+                                <p class="f-16 w-400">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have
+                                    suffered alteration in some form, by injected humor, or randomized words which don't
+                                    look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
+                                    need to be sure there isn't anything embarrassing hidden in the middle of text.
+                                </p>
+                                <p class="f-16 w-400">
+
+                                    inure are many variations of passages of Lorem Ipsum available, but the majority
+                                    have
+                                    suffered alteration in some form, by injected humor, or randomized words which don't
+                                    look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
+                                    need to be sure there isn't anything embarrassing hidden in the middle of text.
+                                </p>
+                            </div>
+
+                            <div class="details p-3 " data-aos="zoom-in">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <p class="f-20 w-500 mb-0 pb-0 ">
+                                        jOBS
+                                    </p>
+                                    <p class="text-green f-14 w-400 mb-0 pb-0 ">1 Active</p>
+
+                                </div>
+                                <div class="line mt-2"></div>
+                                <div class="d-flex mt-2">
+                                    <p class="f-16 mb-0 pb-0 w-400">Company: </p>
+                                    <p class="f-16 mb-0 pb-0 w-400">The Artsy Lens </p>
+                                </div>
+                                <div class="d-flex">
+                                    <p class="f-16 mb-0 pb-0 w-400"> Location: </p>
+                                    <p class="f-16 mb-0 pb-0 w-400">Wustestatte 11, 28195, Bremen, Deutshland </p>
+                                </div>
+                                <div class="d-flex">
+                                    <p class="f-16 mb-0 pb-0 w-400">Shooting Category: </p>
+                                    <p class="f-16 mb-0 pb-0 w-400">Nude </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="friends-section my-5">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 d-flex justify-content-center w-100">
+                        <div class="main-heading  wf" data-aos="zoom-in-up">
+                            FRIENDS<span class="type f-20">(200)</span>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-12 mt-5">
+                        <!-- Set up your HTML -->
+                        <div class="owl-carousel">
+                            <div class="friend-card">
+                                <img src="assets/images/Rectangle 15.png" alt="" class="img-fluid friend-img">
+                                <div
+                                    class="friends-detail d-flex flex-column align-items-center justify-content-end w-100">
+                                    <div class="friends-social d-flex justify-content-end align-items-end w-100 mb-5">
+                                        <div class="icon mx-2">
+                                            <a href=""><i class="bi bi-twitter"></i></a>
+                                        </div>
+                                        <div class="icon mx-2">
+                                            <a href=""><i class="bi bi-facebook"></i></a>
+                                        </div>
+                                        <div class="icon mx-2">
+                                            <a href=""><i class="bi bi-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="caption w-100">
+                                        <div class="text-center">
+                                            <p class="mb-0 pb-0 f-24 w-700">Eritha Jhon</p>
+                                            <p class="type text-center mb-0 pb-0 text-dark">Eritha Jhon</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="friend-card">
+                                <img src="assets/images/Rectangle 16.png" alt="" class="img-fluid friend-img">
+                                <div
+                                    class="friends-detail d-flex flex-column align-items-center justify-content-end w-100">
+                                    <div class="friends-social d-flex justify-content-end align-items-end w-100 mb-5">
+                                        <div class="icon mx-2">
+                                            <a href=""><i class="bi bi-twitter"></i></a>
+                                        </div>
+                                        <div class="icon mx-2">
+                                            <a href=""><i class="bi bi-facebook"></i></a>
+                                        </div>
+                                        <div class="icon mx-2">
+                                            <a href=""><i class="bi bi-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="caption w-100">
+                                        <div class="text-center">
+                                            <p class="mb-0 pb-0 f-24 w-700">Eritha Jhon</p>
+                                            <p class="type text-center mb-0 pb-0 text-dark">Eritha Jhon</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="friend-card">
+                                <img src="assets/images/Rectangle 17.png" alt="" class="img-fluid friend-img">
+                                <div
+                                    class="friends-detail d-flex flex-column align-items-center justify-content-end w-100">
+                                    <div class="friends-social d-flex justify-content-end align-items-end w-100 mb-5">
+                                        <div class="icon mx-2">
+                                            <a href=""><i class="bi bi-twitter"></i></a>
+                                        </div>
+                                        <div class="icon mx-2">
+                                            <a href=""><i class="bi bi-facebook"></i></a>
+                                        </div>
+                                        <div class="icon mx-2">
+                                            <a href=""><i class="bi bi-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="caption w-100">
+                                        <div class="text-center">
+                                            <p class="mb-0 pb-0 f-24 w-700">Eritha Jhon</p>
+                                            <p class="type text-center mb-0 pb-0 text-dark">Eritha Jhon</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="friend-card">
+                                <img src="assets/images/Rectangle 18.png" alt="" class="img-fluid friend-img">
+                                <div
+                                    class="friends-detail d-flex flex-column align-items-center justify-content-end w-100">
+                                    <div class="friends-social d-flex justify-content-end align-items-end w-100 mb-5">
+                                        <div class="icon mx-2">
+                                            <a href=""><i class="bi bi-twitter"></i></a>
+                                        </div>
+                                        <div class="icon mx-2">
+                                            <a href=""><i class="bi bi-facebook"></i></a>
+                                        </div>
+                                        <div class="icon mx-2">
+                                            <a href=""><i class="bi bi-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="caption w-100">
+                                        <div class="text-center">
+                                            <p class="mb-0 pb-0 f-24 w-700">Eritha Jhon</p>
+                                            <p class="type text-center mb-0 pb-0 text-dark">Eritha Jhon</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-comment">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="main-heading" data-aos="zoom-in-up">
+                            COMMENT
+                        </div>
+                        <div class="line my-4"></div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="comment-card d-flex align-items-start">
+                            <div class="comment-pic">
+                                <img src="assets/images/Ellipse 11.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="comment-text  w-100">
+                                <div
+                                    class=" w-100  comment-text-heading d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h1 class="f-30 w-600 m-0 p-0">
+                                            Thomus Moris
+                                        </h1>
+                                        <h1 class="type text-start">
+                                            Photographer
+                                        </h1>
+                                    </div>
+                                    <div>
+                                        <div class="d-flex mt-2">
+                                            <p class="f-16 mb-0 pb-0 w-400">Work together: </p>
+                                            <p class="f-16 mb-0 pb-0 w-400">1 time </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="f-24">
+                                    The passage experienced a surge in popularity during the 1960s when Letraset used it
+                                    on their dry transfer sheets, and again during the 90s as desktop publishers bundled
+                                    the text with the software Today it's soon around the web, on templates websites and
+                                    stock designs
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="comment-card d-flex align-items-start">
+                            <div class="comment-pic">
+                                <img src="assets/images/Ellipse 11.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="comment-text  w-100">
+                                <div
+                                    class=" w-100  comment-text-heading d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h1 class="f-30 w-600 m-0 p-0">
+                                            Thomus Moris
+                                        </h1>
+                                        <h1 class="type text-start">
+                                            Photographer
+                                        </h1>
+                                    </div>
+                                    <div>
+                                        <div class="d-flex mt-2">
+                                            <p class="f-16 mb-0 pb-0 w-400">Work together: </p>
+                                            <p class="f-16 mb-0 pb-0 w-400">1 time </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="f-24">
+                                    The passage experienced a surge in popularity during the 1960s when Letraset used it
+                                    on their dry transfer sheets, and again during the 90s as desktop publishers bundled
+                                    the text with the software Today it's soon around the web, on templates websites and
+                                    stock designs
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="comment-card d-flex align-items-start">
+                            <div class="comment-pic">
+                                <img src="assets/images/Ellipse 11.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="comment-text  w-100">
+                                <div
+                                    class=" w-100  comment-text-heading d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h1 class="f-30 w-600 m-0 p-0">
+                                            Thomus Moris
+                                        </h1>
+                                        <h1 class="type text-start">
+                                            Photographer
+                                        </h1>
+                                    </div>
+                                    <div>
+                                        <div class="d-flex mt-2">
+                                            <p class="f-16 mb-0 pb-0 w-400">Work together: </p>
+                                            <p class="f-16 mb-0 pb-0 w-400">1 time </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="f-24">
+                                    The passage experienced a surge in popularity during the 1960s when Letraset used it
+                                    on their dry transfer sheets, and again during the 90s as desktop publishers bundled
+                                    the text with the software Today it's soon around the web, on templates websites and
+                                    stock designs
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-6">
+                        <img src="assets/images/Screenshot_4 1.png" alt="" class="img-fluid">
+                     </div>
+                     <div class="col-lg-6">
+                        <img src="assets/images/Screenshot_4 1.png" alt="" class="img-fluid">
+                     </div>
+                     <div class="col-lg-12">
+                        <div class="comment-card d-flex align-items-start">
+                            <div class="comment-pic">
+                                <img src="assets/images/Ellipse 11.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="comment-text  w-100">
+                                <div
+                                    class=" w-100  comment-text-heading d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h1 class="f-30 w-600 m-0 p-0">
+                                            Thomus Moris
+                                        </h1>
+                                        <h1 class="type text-start">
+                                            Photographer
+                                        </h1>
+                                    </div>
+                                    <div>
+                                        <div class="d-flex mt-2">
+                                            <p class="f-16 mb-0 pb-0 w-400">Work together: </p>
+                                            <p class="f-16 mb-0 pb-0 w-400">1 time </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="f-24">
+                                    The passage experienced a surge in popularity during the 1960s when Letraset used it
+                                    on their dry transfer sheets, and again during the 90s as desktop publishers bundled
+                                    the text with the software Today it's soon around the web, on templates websites and
+                                    stock designs
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="comment-card d-flex align-items-start">
+                            <div class="comment-pic">
+                                <img src="assets/images/Ellipse 11.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="comment-text  w-100">
+                                <div
+                                    class=" w-100  comment-text-heading d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h1 class="f-30 w-600 m-0 p-0">
+                                            Thomus Moris
+                                        </h1>
+                                        <h1 class="type text-start">
+                                            Photographer
+                                        </h1>
+                                    </div>
+                                    <div>
+                                        <div class="d-flex mt-2">
+                                            <p class="f-16 mb-0 pb-0 w-400">Work together: </p>
+                                            <p class="f-16 mb-0 pb-0 w-400">1 time </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="f-24">
+                                    The passage experienced a surge in popularity during the 1960s when Letraset used it
+                                    on their dry transfer sheets, and again during the 90s as desktop publishers bundled
+                                    the text with the software Today it's soon around the web, on templates websites and
+                                    stock designs
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 mb-3">
+                        <div class="comment-card d-flex align-items-start">
+                            <div class="comment-pic">
+                                <img src="assets/images/Ellipse 11.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="comment-text  w-100">
+                                <div
+                                    class=" w-100  comment-text-heading d-flex justify-content-between align-items-start">
+                                    <div>
+                                        <h1 class="f-30 w-600 m-0 p-0">
+                                            Thomus Moris
+                                        </h1>
+                                        <h1 class="type text-start">
+                                            Photographer
+                                        </h1>
+                                    </div>
+                                    <div>
+                                        <div class="d-flex mt-2">
+                                            <p class="f-16 mb-0 pb-0 w-400">Work together: </p>
+                                            <p class="f-16 mb-0 pb-0 w-400">1 time </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="f-24">
+                                    The passage experienced a surge in popularity during the 1960s when Letraset used it
+                                    on their dry transfer sheets, and again during the 90s as desktop publishers bundled
+                                    the text with the software Today it's soon around the web, on templates websites and
+                                    stock designs
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- bootstrap5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="assets/owlcarousel/owl.carousel.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="assets/app.js"></script>
+    <script>
+        AOS.init({
+            duration:1500
+        });
+    </script>
+</body>
+
+</html>
