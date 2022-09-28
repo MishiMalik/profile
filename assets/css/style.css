@@ -308,7 +308,7 @@ categories section
 
 .tablinks:hover {
     background-color: #2a6730;
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 .details {
