@@ -79,7 +79,11 @@
    width: 100%;
     }
 
-   
+    .friends-social .icon {
+        height: 40px;
+        width: 40px;
+       flex-shrink: 0 !important;
+    }
 
 
     

@@ -368,7 +368,7 @@ categories section
 }
 
 .friend-img {
-    height: 350;
+    height: 350px;
     width: auto;
     border-radius: 0;
 }
@@ -383,6 +383,7 @@ categories section
     padding: 25px;
     opacity: 0;
     transition: 2s;
+    height: 350px;
 }
 
 .friend-card:hover {
@@ -403,6 +404,7 @@ categories section
     justify-content: center;
     align-items: center;
     border: 1px solid white;
+    flex-shrink: 0 !important;
 }
 
 .friends-social .icon a {
