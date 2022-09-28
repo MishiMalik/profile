@@ -1,5 +1,4 @@
 .main-heading {
-
     color: #333333;
     font-size: 30px;
     font-weight: 700;
@@ -12,6 +11,7 @@
 }
 
 .main-heading::before {
+    background-color: #333333;
     content: ' ';
     position: absolute;
     bottom: -3px;
@@ -30,6 +30,8 @@
 }
 
 .heading-secondry::before {
+    background-color: #333333;
+
     content: ' ';
     position: absolute;
     bottom: -3px;
