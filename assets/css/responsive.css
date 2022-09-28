@@ -64,15 +64,9 @@
         margin: 0px;
     }
 
-    .gray-section {
-        height: 0px;
-        padding: 0px;
-    }
+    
 
-    .dp-section {
-        margin-top: -130px;
-    }
-
+    
     .dp-col {
         justify-content: center !important;
     }
@@ -81,21 +75,31 @@
         display: none;
     }
 
+    .graphixs-div{
+   width: 100%;
+    }
+
+   
+
+
+    
+
+    .arrow-icon {
+        margin-bottom: 24px !important;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    
+    
+    .address-div {
+        justify-content: center !important;
+        margin: 30px 0px;
+    }
     .name-text {
         text-align: center;
         justify-content: center;
     }
-
-    .first-name {
-        text-align: center !important;
-        margin-top: 5px;
-    }
-
-    .last-name {
-        text-align: center !important;
-        margin-top: 5px;
-    }
-
     .status {
         margin-top: 8px;
         text-align: center;
@@ -109,18 +113,25 @@
     .text-white-green {
         color: #004d61 !important;
     }
-
-    .address-div {
-        justify-content: center !important;
-        margin: 30px 0px;
+    .first-name {
+        text-align: center !important;
+        margin-top: 5px;
     }
 
-    .arrow-icon {
-        margin-bottom: 24px !important;
+    .last-name {
+        text-align: center !important;
+        margin-top: 5px;
     }
-}
-
-@media only screen and (max-width:768px) {
+    .dp-section {
+        margin-top: -130px;
+    }
+    .camera-icon{
+   right: 14px;
+    }
+    .gray-section {
+        height: 0px;
+        padding: 0px;
+    }
     .owl-nav {
         display: none;
     }
@@ -157,13 +168,6 @@
     .comment-pic {
         margin: 0px;
     }
-}
-
-@media only screen and (max-width:340px) {
-    .details-table tbody tr td {
-        font-size: 12px;
-    }
-
     .display-picture {
         width: 300px;
         height: 300px;
@@ -173,5 +177,16 @@
         width: 250px !important;
         height: 250px !important;
     }
+}
+
+@media only screen and (max-width:340px) {
+    .graphixs-div{
+        width:261px;
+         }
+    .details-table tbody tr td {
+        font-size: 12px;
+    }
+
+   
 
 }
