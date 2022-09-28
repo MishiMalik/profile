@@ -39,9 +39,11 @@
     border: 1px solid #333333;
     border-radius: 2px;
 }
-.f-30{
+
+.f-30 {
     font-size: 30px;
 }
+
 .f-16 {
     font-size: 16px;
 }
@@ -73,14 +75,18 @@
 .w-300 {
     font-weight: 300;
 }
-.w-700{
+
+.w-700 {
     font-weight: 700;
 }
-.w-500{
+
+.w-500 {
     font-weight: 500;
 }
-.text-green{
-    color:  #2a6730;;
+
+.text-green {
+    color: #2a6730;
+    ;
 }
 
 .yellow-text {
@@ -99,6 +105,7 @@ a {
 .arrow-icon {
     margin-bottom: 20px;
 }
-.wf{
+
+.wf {
     width: fit-content;
 }

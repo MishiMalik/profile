@@ -46,7 +46,7 @@ $('.owl-carousel').owlCarousel({
     d="M9.999,1.999 L2.999,8.999 L9.999,15.999 "/>
    <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
     d="M18.999,8.999 L2.999,8.999 "/>
-   </svg></div>`,`<div class='nav-btn next-slide'><svg 
+   </svg></div>`, `<div class='nav-btn next-slide'><svg 
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    width="21px" height="19px">

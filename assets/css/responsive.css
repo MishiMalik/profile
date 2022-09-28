@@ -81,10 +81,11 @@
         display: none;
     }
 
-    .name-text{
+    .name-text {
         text-align: center;
         justify-content: center;
     }
+
     .first-name {
         text-align: center !important;
         margin-top: 5px;
@@ -104,59 +105,73 @@
     .text-left {
         text-align: center !important;
     }
-    .text-white-green{
-        color:#004d61 !important;
+
+    .text-white-green {
+        color: #004d61 !important;
     }
-    .address-div{
+
+    .address-div {
         justify-content: center !important;
         margin: 30px 0px;
     }
-    .arrow-icon{
+
+    .arrow-icon {
         margin-bottom: 24px !important;
     }
 }
-@media only screen and (max-width:768px){
-    .owl-nav{
+
+@media only screen and (max-width:768px) {
+    .owl-nav {
         display: none;
     }
+
     .details-table tbody tr td {
         font-size: 14px;
-        
+
     }
-    .comment-text-heading{
+
+    .comment-text-heading {
         flex-direction: column;
     }
 
 }
-@media only screen and (max-width:600px){
-   .details{
-    padding: 10px;
-   }
-  .edit-photo-btn{
-   right: 10px;
-   
-  }
-  .friend-card{
-    width: unset;
-  }
-  .comment-card {
-    flex-direction: column;
-  }
-  .comment-pic{
-    margin: 0px;
-  }
+
+@media only screen and (max-width:600px) {
+    .details {
+        padding: 10px;
+    }
+
+    .edit-photo-btn {
+        right: 10px;
+
+    }
+
+    .friend-card {
+        width: unset;
+    }
+
+    .comment-card {
+        flex-direction: column;
+    }
+
+    .comment-pic {
+        margin: 0px;
+    }
 }
-@media only screen and (max-width:340px){
+
+@media only screen and (max-width:340px) {
     .details-table tbody tr td {
         font-size: 12px;
     }
-    .display-picture{
-      width: 300px;
-      height: 300px;
+
+    .display-picture {
+        width: 300px;
+        height: 300px;
     }
-    .display-picture img{
+
+    .display-picture img {
         width: 250px !important;
         height: 250px !important;
     }
-   
- }
+
+}
