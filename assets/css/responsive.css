@@ -192,6 +192,10 @@
 .comment-card {
     padding: 15px;
 }
+.comment-pic img{
+    height: 100px;
+    width: 100px;
+}
 
     .comment-pic {
         margin: 0px;
