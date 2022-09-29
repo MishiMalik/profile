@@ -92,6 +92,9 @@
     .arrow-icon {
         margin-bottom: 24px !important;
     }
+    .comment-card {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width:768px) {
@@ -185,9 +188,7 @@
         width: unset;
     }
 
-    .comment-card {
-        flex-direction: column;
-    }
+   
 
     .comment-pic {
         margin: 0px;

@@ -137,6 +137,10 @@ wallpaper image
     font-size: 16px;
     font-weight: 500;
 }
+.upload-img-btn:hover{
+    background-color: #2a6730;
+    color: #ffffff;
+}
 
 /* ------------------------------------------------------------
 name section
